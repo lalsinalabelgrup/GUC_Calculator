@@ -74,9 +74,116 @@
         <button id="reset-button" class="reset-button" type="button">
           Limpiar cantidades
         </button>
+        <button id="pdf-button" class="pdf-button" type="button">
+          Generar PDF presupuesto
+        </button>
       </aside>
     </main>
 
+    <div
+      id="client-wizard"
+      class="modal-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="client-wizard-title"
+      hidden
+    >
+      <div class="client-wizard">
+        <div class="wizard-heading">
+          <div>
+            <p id="wizard-step-label" class="wizard-step-label">Paso 1 de 2</p>
+            <h2 id="client-wizard-title">Datos del cliente</h2>
+          </div>
+          <button
+            id="wizard-close-button"
+            class="modal-close-button"
+            type="button"
+            aria-label="Cerrar"
+          >
+            ×
+          </button>
+        </div>
+
+        <form id="client-wizard-form" novalidate>
+          <div class="wizard-step" data-step="1">
+            <div class="form-grid">
+              <label class="form-field">
+                <span>Nombre empresa cliente *</span>
+                <input id="client-name" name="nombre" type="text" required />
+              </label>
+              <label class="form-field">
+                <span>CIF/NIF</span>
+                <input id="client-cif" name="cif" type="text" />
+              </label>
+              <label class="form-field form-field-full">
+                <span>Dirección</span>
+                <input id="client-address" name="direccion" type="text" />
+              </label>
+              <label class="form-field">
+                <span>Persona de contacto</span>
+                <input id="client-contact" name="contacto" type="text" />
+              </label>
+              <label class="form-field">
+                <span>Email</span>
+                <input id="client-email" name="email" type="email" />
+              </label>
+              <label class="form-field">
+                <span>Teléfono</span>
+                <input id="client-phone" name="telefono" type="tel" />
+              </label>
+            </div>
+          </div>
+
+          <div class="wizard-step" data-step="2" hidden>
+            <label class="form-field">
+              <span>Observaciones o condiciones específicas</span>
+              <textarea
+                id="client-observations"
+                name="observaciones"
+                rows="5"
+              ></textarea>
+            </label>
+            <div class="wizard-review" aria-live="polite">
+              <h3>Revisión rápida</h3>
+              <dl>
+                <div>
+                  <dt>Cliente</dt>
+                  <dd id="wizard-review-client">-</dd>
+                </div>
+                <div>
+                  <dt>Items seleccionados</dt>
+                  <dd id="wizard-review-items">0</dd>
+                </div>
+                <div>
+                  <dt>Total presupuesto</dt>
+                  <dd id="wizard-review-total">0,00&nbsp;€</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+
+          <p id="wizard-error" class="wizard-error" aria-live="polite"></p>
+
+          <div class="wizard-actions">
+            <button id="wizard-cancel-button" class="secondary-button" type="button">
+              Cancelar
+            </button>
+            <button id="wizard-back-button" class="secondary-button" type="button" hidden>
+              Atrás
+            </button>
+            <button id="wizard-next-button" class="primary-button" type="button">
+              Siguiente
+            </button>
+            <button id="wizard-generate-button" class="primary-button" type="submit" hidden>
+              Generar PDF
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.4/jspdf.plugin.autotable.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
