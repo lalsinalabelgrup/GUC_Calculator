@@ -1,0 +1,121 @@
+[
+  {
+    "id": "guc-agent",
+    "nombre": "Guc Agent",
+    "descripcion": "Licencia base para usuarios CallCenter Recepcion / Emision / Argumentarios / Marcación Automática.",
+    "partida": "Licencias",
+    "precio": 65
+  },
+  {
+    "id": "guc-agent-lite",
+    "nombre": "Guc Agent Lite",
+    "descripcion": "Licencia base para usuarios Recepción / Emisión.",
+    "partida": "Licencias",
+    "precio": 47
+  },
+  {
+    "id": "extension-centralita",
+    "nombre": "Extension Centralita",
+    "descripcion": "Licencia para utilizar un un softphone.",
+    "partida": "Licencias",
+    "precio": 9
+  },
+  {
+    "id": "agent-monitor",
+    "nombre": "Agent Monitor",
+    "descripcion": "Monitor de seguimiento y análisis de agentes.",
+    "partida": "Monitores",
+    "precio": 42.45
+  },
+  {
+    "id": "queue-monitor",
+    "nombre": "Queue Monitor",
+    "descripcion": "Monitor de seguimiento y análisis de colas.",
+    "partida": "Monitores",
+    "precio": 42.45
+  },
+  {
+    "id": "supervisor-administrador",
+    "nombre": "Supervisor / Administrador",
+    "descripcion": "Herramienta de gestión y supervisión de operaciones.",
+    "partida": "Licencias",
+    "precio": 62
+  },
+  {
+    "id": "reporting",
+    "nombre": "Reporting",
+    "descripcion": "Herramienta de generación de informes y análisis de datos.",
+    "partida": "Licencias",
+    "precio": 35
+  },
+  {
+    "id": "developer",
+    "nombre": "Developer",
+    "descripcion": "Herramienta de desarrollo y personalización de campañas.",
+    "partida": "Licencias",
+    "precio": 150
+  },
+  {
+    "id": "gestion-guc-pbx",
+    "nombre": "Gestion Guc PBX",
+    "descripcion": "Herramienta de Gestion de Centralita.",
+    "partida": "Licencias",
+    "precio": 85
+  },
+  {
+    "id": "servidor-guc-cloud",
+    "nombre": "Servidor GUC Cloud ",
+    "descripcion": "Instalación estructura sistema GUC.",
+    "partida": "Infraestructura",
+    "precio": 550
+  },
+  {
+    "id": "servidor-guc-cloud-xxl",
+    "nombre": "Servidor GUC Cloud XXL",
+    "descripcion": "Instalación estructura sistema GUC.",
+    "partida": "Infraestructura",
+    "precio": 825
+  },  
+    {
+    "id": "servicios-profesionales-cloud",
+    "nombre": "Servicios Profesionales Cloud",
+    "descripcion": "Copia de seguridad, mantenimiento y actualizaciones del sistema GUC, licencia Veeam Backup VM.",
+    "partida": "Infraestructura",
+    "precio": 75
+  },  
+  {
+    "id": "guc-meeting",
+    "nombre": "Guc Meeting",
+    "descripcion": "Herramienta de videoconferencia.",
+    "partida": "Integraciones",
+    "precio": 615
+  },
+  {
+    "id": "guc-chat",
+    "nombre": "Guc Chat",
+    "descripcion": "Herramienta de mensajería instantánea.",
+    "partida": "Integraciones",
+    "precio": 550
+  },
+  {
+    "id": "consultoria-integracion",
+    "nombre": "Consultoría e Integración",
+    "descripcion": "Consultoría estratégica, integración de sistemas ( Precio día Consultor ).",
+    "partida": "Servicios de instalación",
+    "precio": 750
+  },
+  {
+    "id": "consultoria-integracion-media-jornada",
+    "nombre": "Consultoría e Integración 1/2 Jornada",
+    "descripcion": "Consultoría estratégica, integración de sistemas ( 1/2 jornada ).",
+    "partida": "Servicios de instalación",
+    "precio": 420
+  },
+  {
+    "id": "soporte-tecnico",
+    "nombre": "Soporte Técnico",
+    "descripcion": "Soporte técnico Nivel 2 realizado por Promo-Soft (12*7*365).",
+    "partida": "Soporte",
+    "precio": 4500
+  }
+]
