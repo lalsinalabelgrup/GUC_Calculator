@@ -1,14 +1,14 @@
 [
   {
     "id": "guc-agent",
-    "nombre": "Guc Agent",
+    "nombre": "Agent",
     "descripcion": "Licencia base para usuarios CallCenter Recepcion / Emision / Argumentarios / Marcación Automática.",
     "partida": "Licencias",
     "precio": 65
   },
   {
     "id": "guc-agent-lite",
-    "nombre": "Guc Agent Lite",
+    "nombre": "Agent Lite",
     "descripcion": "Licencia base para usuarios Recepción / Emisión.",
     "partida": "Licencias",
     "precio": 47
@@ -16,7 +16,7 @@
   {
     "id": "extension-centralita",
     "nombre": "Extension Centralita",
-    "descripcion": "Licencia para utilizar un un softphone.",
+    "descripcion": "Licencia para utilizar un softphone.",
     "partida": "Licencias",
     "precio": 9
   },
@@ -57,42 +57,42 @@
   },
   {
     "id": "gestion-guc-pbx",
-    "nombre": "Gestion Guc PBX",
+    "nombre": "Gestion PBX",
     "descripcion": "Herramienta de Gestion de Centralita.",
     "partida": "Licencias",
     "precio": 85
   },
   {
     "id": "servidor-guc-cloud",
-    "nombre": "Servidor GUC Cloud ",
-    "descripcion": "Instalación estructura sistema GUC.",
+    "nombre": "Servidor Cloud ",
+    "descripcion": "alta disponibilidad , (99,999%) - 10 gb de ancho de banda.6 CPUS virtuales 16gb de ram 750 GB disco duro",
     "partida": "Infraestructura",
-    "precio": 550
+    "precio": 350
   },
   {
     "id": "servidor-guc-cloud-xxl",
-    "nombre": "Servidor GUC Cloud XXL",
-    "descripcion": "Instalación estructura sistema GUC.",
+    "nombre": "Servidor Cloud XXL",
+    "descripcion": "Instalación estructura sistema - ???.",
     "partida": "Infraestructura",
-    "precio": 825
+    "precio": 875
   },  
     {
     "id": "servicios-profesionales-cloud",
-    "nombre": "Servicios Profesionales Cloud",
-    "descripcion": "Copia de seguridad, mantenimiento y actualizaciones del sistema GUC, licencia Veeam Backup VM.",
+    "nombre": "Servicios Cloud",
+    "descripcion": "Copia de seguridad, mantenimiento y actualizaciones del sistema, licencia Veeam Backup VM.",
     "partida": "Infraestructura",
     "precio": 75
   },  
   {
     "id": "guc-meeting",
-    "nombre": "Guc Meeting",
+    "nombre": "Agent Meeting",
     "descripcion": "Herramienta de videoconferencia.",
     "partida": "Integraciones",
     "precio": 615
   },
   {
     "id": "guc-chat",
-    "nombre": "Guc Chat",
+    "nombre": "Agent Chat",
     "descripcion": "Herramienta de mensajería instantánea.",
     "partida": "Integraciones",
     "precio": 550
@@ -114,7 +114,7 @@
   {
     "id": "soporte-tecnico",
     "nombre": "Soporte Técnico",
-    "descripcion": "Soporte técnico Nivel 2 realizado por Promo-Soft (12*7*365).",
+    "descripcion": "Soporte técnico Nivel 2 realizado por Fabricante (12*7*365).",
     "partida": "Soporte",
     "precio": 4500
   }

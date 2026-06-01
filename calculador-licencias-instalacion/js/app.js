@@ -4,6 +4,7 @@ const partidaSummary = document.querySelector("#partida-summary");
 const totalUnitsElement = document.querySelector("#total-units");
 const totalPriceElement = document.querySelector("#total-price");
 const resetButton = document.querySelector("#reset-button");
+const cartPreviewList = document.querySelector("#cart-preview-list");
 
 const currencyFormatter = new Intl.NumberFormat("es-ES", {
   style: "currency",
@@ -57,6 +58,10 @@ function getItemSubtotal(item) {
   return (Number(item.precio) || 0) * getQuantity(item.id);
 }
 
+function getSelectedItems() {
+  return items.filter((item) => getQuantity(item.id) > 0);
+}
+
 function getPartidaSubtotal(partida) {
   return getItemsByPartida(partida).reduce(
     (subtotal, item) => subtotal + getItemSubtotal(item),
@@ -90,6 +95,7 @@ function updateTotals() {
   totalPriceElement.textContent = formatCurrency(totalPrice);
   updatePartidaSummary();
   updateTabSubtotals();
+  renderCartPreview();
 }
 
 function createTextElement(tagName, className, text) {
@@ -158,6 +164,51 @@ function createItemRow(item, index) {
   });
 
   return row;
+}
+
+function createCartPreviewItem(item) {
+  const cartItem = document.createElement("div");
+  cartItem.className = "cart-preview-item";
+  cartItem.title = `${item.nombre} | Cant: ${getQuantity(item.id)} | ${formatCurrency(
+    Number(item.precio) || 0
+  )} | Total: ${formatCurrency(getItemSubtotal(item))}`;
+
+  cartItem.append(
+    createTextElement("span", "cart-preview-item-name", item.nombre),
+    createTextElement("span", "cart-preview-item-quantity", getQuantity(item.id)),
+    createTextElement(
+      "span",
+      "cart-preview-item-price",
+      formatCurrency(Number(item.precio) || 0)
+    ),
+    createTextElement(
+      "span",
+      "cart-preview-item-subtotal",
+      formatCurrency(getItemSubtotal(item))
+    )
+  );
+  return cartItem;
+}
+
+function renderCartPreview() {
+  cartPreviewList.innerHTML = "";
+
+  const selectedItems = getSelectedItems();
+
+  if (selectedItems.length === 0) {
+    cartPreviewList.appendChild(
+      createTextElement(
+        "p",
+        "cart-preview-empty",
+        "No hay items seleccionados todavía."
+      )
+    );
+    return;
+  }
+
+  selectedItems.forEach((item) => {
+    cartPreviewList.appendChild(createCartPreviewItem(item));
+  });
 }
 
 function updatePartidaSummary() {
