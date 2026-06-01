@@ -3,21 +3,21 @@
     "id": "guc-agent",
     "nombre": "Agent",
     "descripcion": "Licencia base para usuarios CallCenter Recepcion / Emision / Argumentarios / Marcación Automática.",
-    "partida": "Licencias",
+    "partida": "Agentes",
     "precio": 65
   },
   {
     "id": "guc-agent-lite",
     "nombre": "Agent Lite",
     "descripcion": "Licencia base para usuarios Recepción / Emisión.",
-    "partida": "Licencias",
+    "partida": "Agentes",
     "precio": 47
   },
   {
     "id": "extension-centralita",
     "nombre": "Extension Centralita",
     "descripcion": "Licencia para utilizar un softphone.",
-    "partida": "Licencias",
+    "partida": "Agentes",
     "precio": 9
   },
   {
@@ -38,28 +38,28 @@
     "id": "supervisor-administrador",
     "nombre": "Supervisor / Administrador",
     "descripcion": "Herramienta de gestión y supervisión de operaciones.",
-    "partida": "Licencias",
+    "partida": "Monitores",
     "precio": 62
   },
   {
     "id": "reporting",
     "nombre": "Reporting",
     "descripcion": "Herramienta de generación de informes y análisis de datos.",
-    "partida": "Licencias",
+    "partida": "Monitores",
     "precio": 35
   },
   {
     "id": "developer",
     "nombre": "Developer",
     "descripcion": "Herramienta de desarrollo y personalización de campañas.",
-    "partida": "Licencias",
+    "partida": "Desarrollo",
     "precio": 150
   },
   {
     "id": "gestion-guc-pbx",
     "nombre": "Gestion PBX",
     "descripcion": "Herramienta de Gestion de Centralita.",
-    "partida": "Licencias",
+    "partida": "Monitores",
     "precio": 85
   },
   {
